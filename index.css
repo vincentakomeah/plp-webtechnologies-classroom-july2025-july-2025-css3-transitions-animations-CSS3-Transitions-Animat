@@ -1,0 +1,54 @@
+/* Smooth hover for header */
+#header {
+    background-color: pink;
+    padding: 50px;
+    transition: all 0.3s ease-in-out; /* smoother transition */
+    cursor: pointer; /* visual cue */
+}
+
+#header:hover {
+    background-color: lightseagreen;
+    transform: scale(1.05); /* subtle zoom on hover */
+}
+
+/* Button hover effect */
+#submit_button {
+    background-color: darkorange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#submit_button:hover {
+    background-color: orangered;
+    transform: translateY(-3px) scale(1.05); /* button rises slightly */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* Continuous animation example using keyframes */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px yellow; }
+    50% { box-shadow: 0 0 20px yellow; }
+    100% { box-shadow: 0 0 5px yellow; }
+}
+
+#footer {
+    background-color: pink;
+    padding: 30px;
+    text-align: center;
+    animation: glow 2s infinite; /* continuous glowing footer */
+}
+
+/* Smooth fade for lists */
+#ordered_list, #unordered_list {
+    transition: all 0.3s ease;
+}
+
+#ordered_list:hover, #unordered_list:hover {
+    transform: scale(1.02); /* subtle zoom on hover */
+    box-shadow: 4px 4px 10px grey;
+}

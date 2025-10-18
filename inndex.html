@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- Opens the HTML document and sets language to English -->
+
+    <!-- Meta information about the webpage -->
+    <meta charset="UTF-8"> <!-- Ensures correct character encoding (UTF-8 supports most characters) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on mobile -->
+    <meta name="enhanced-forms" content="Making forms"> <!-- Custom meta description -->
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title id="title">Enhanced-forms</title> <!-- Title shown on the browser tab -->
+</head>
+
+<body>
+    <!-- Page header -->
+    <header id="header">Enhanced form html</header>
+
+    <!-- Rules and regulations list -->
+    <p></p>
+    <p><b>Rules and regulations</b>
+        <ol id="ordered_list"> <!-- Ordered list of rules -->
+            <caption>Here are things to do in the class.</caption> <!-- Caption for the list -->
+            <li>Do your homework.</li>
+            <li>Be punctual.</li>
+            <li>Ask questions.</li>
+            <li>Learn.</li>
+            <li>Clap when there is the need.</li>
+        </ol>
+    </p>
+
+    <!-- Things not needed in class -->
+    <p></p>
+    <ul id="unordered_list"> <!-- Unordered list -->
+        <caption>Here are things not needed in class.</caption>
+        <li>Fighting.</li>
+        <li>Mocking.</li>
+        <li>Debating.</li>
+    </ul>
+
+    <!-- Table of courses, grades, and remarks -->
+    <p></p>
+    <table border="1px;solid" id="table"> <!-- Table with border -->
+        <caption><b>Courses, grades and remarks required to complete the program</b></caption>
+        <tr>
+            <th>Courses</th>
+            <th>Grades</th>
+            <th>Remarks</th>
+        </tr>
+
+        <tr>
+            <td>Science</td>
+            <td>A - C</td>
+            <td>Great!</td>
+        </tr>
+
+        <tr>
+            <td>Maths</td>
+            <td>A - C</td>
+            <td>Great!</td>
+        </tr>
+
+        <tr>
+            <td>Foreign languages</td>
+            <td>A - C</td>
+            <td>Great!</td>
+        </tr>
+    </table>
+
+    <!-- Required media for students -->
+    <p id="audio_and_video">
+        <caption>Here are required media for students</caption>
+        <!-- Audio element -->
+        <audio controls>
+            <source src="Pop Smoke - Hello Audio ft A Boogie wit da Hoodie.mp3" type="audio/mpeg">
+            This audio does not support your browser.
+        </audio>
+    
+        <!-- Video element -->
+        <video controls width="300" height="300">
+            <source src="vid_lesson_no3.mp4" type="video/mp4">
+            This video does not support your browser.
+        </video>
+    </p>
+
+    <!-- Form: Personal Information -->
+    <p>
+        <fieldset id="field_set"> <!-- Groups form fields together -->
+            <legend>Personal Information</legend> <!-- Form section title -->
+            <br>
+            <input type="text" placeholder="Enter Firstname." id="fn" required class="inputer"> <!-- First name input -->
+            <p></p>
+            <input type="text" placeholder="Enter lastname." required class="inputer"> <!-- Last name input -->
+            <p></p>
+            <input type="text" placeholder="Enter age." required class="inputer"> <!-- Age input -->
+            <p></p>
+            <select required> <!-- Gender dropdown -->
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+            <p></p>
+            <input type="email" placeholder="Enter email." readonly autocomplete="email"class="inputer"> <!-- Email input (readonly) -->
+            <p></p>
+            <input type="password" placeholder="Enter password." readonly autocomplete="new-password" minlength="10" maxlength="20" pattern="@ ." class="inputer"> <!-- Password input (readonly, corrected placeholder) -->
+            <p>
+                <!-- Country of birth dropdown -->
+                <select>
+                    <option>Ghana</option>
+                    <option>Kenya</option>
+                    <option>Nigeria</option>
+                    <option>Liberia</option>
+                    <option>Togo</option>
+                </select>
+            </p>
+            <button id="submit_button">SUBMIT</button>
+
+             
+        </fieldset>
+    
+    </p>
+   
+    
+    <!-- Footer -->
+    <footer id="footer"><h6>Enhanced-forms Copyright @ 2025</h6></footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
